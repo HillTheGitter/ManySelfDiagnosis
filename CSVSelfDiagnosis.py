@@ -107,7 +107,7 @@ for info in UserInfo:
     except NoAlertPresentException:
         pass
 
-    for i in range(1, 4):
+    for i in range(1, 5):
         sleep(0.2)
         driver.find_element_by_css_selector(f"#container > div.subpage > div > div:nth-child(2) > div.survey_question > dl:nth-child({i}) > dd > ul > li:nth-child(1) > label").click()
     driver.find_element_by_id('btnConfirm').click()
